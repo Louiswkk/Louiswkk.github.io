@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2020/07/14/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>JavaScript_cheatsheet</title>
     <url>/2020/07/06/JavaScript-cheatsheet/</url>
     <content><![CDATA[<p>寫這篇文的時候在隔離,因為要回學校搞畢業的事情,所以在7月1日去了台灣,然後被強制酒店隔離14天,之後還要回學校進行7天的檢疫,渡過了幾天的無聊日子<br>重新出發繼續學習JavaScript,這次是介紹一些html的cheatsheet</p>
@@ -121,6 +103,24 @@
 
 <h1 id="對元素進行操作-onclick事件"><a href="#對元素進行操作-onclick事件" class="headerlink" title="對元素進行操作,onclick事件"></a>對元素進行操作,onclick事件</h1><p>主要著重點在於加法,因為oText1和2的value值是字符串,所以做加法的時候會變成字符串拼接,所以在做加法的時候必須先用Number()做轉換,然後再做加法<br>其他的運算就沒有影響</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">oBt1.onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">			<span class="keyword">var</span> num1 = <span class="built_in">Number</span>(oText1.value);</span><br><span class="line">			<span class="keyword">var</span> num2 = <span class="built_in">Number</span>(oText2.value);</span><br><span class="line">			alert(num1 + num2);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">//減法</span></span><br><span class="line">		oBt2.onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">			alert(oText1.value - oText2.value);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">//乘法</span></span><br><span class="line">		oBt3.onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">			alert(oText1.value * oText2.value);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//除法</span></span><br><span class="line">		oBt4.onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">			alert(oText1.value / oText2.value);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//取余</span></span><br><span class="line">		oBt5.onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">			alert(oText1.value % oText2.value);</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前端學習:JavaScript</title>
+    <url>/2020/06/24/%E5%89%8D%E7%AB%AFJavaScript-1/</url>
+    <content><![CDATA[<p>剛剛建blog,用來記錄學習的進程,現在在學JavaScript,以前的一些學習記錄可能在往後會補發,以前有多個外部儲存硬碟所以懶得開blog,現在看著日益增多的學習筆記,還是開個blog來記錄學習的一些進程比較方便複習,這是第一篇!</p>
+<h1 id="JavaScript的輸出方式"><a href="#JavaScript的輸出方式" class="headerlink" title="JavaScript的輸出方式"></a>JavaScript的輸出方式</h1><h2 id="第一種-輸出到文檔"><a href="#第一種-輸出到文檔" class="headerlink" title="第一種:輸出到文檔"></a>第一種:輸出到文檔</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">document</span>.write(<span class="string">"hello world!"</span>);</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="第二種-輸出到consloe"><a href="#第二種-輸出到consloe" class="headerlink" title="第二種:輸出到consloe"></a>第二種:輸出到consloe</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">"hello world!"</span>);</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="第三種-輸出到提示框"><a href="#第三種-輸出到提示框" class="headerlink" title="第三種:輸出到提示框"></a>第三種:輸出到提示框</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">alert(<span class="string">"hello world!"</span>);</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript的輸出方式:<a href="https://www.runoob.com/js/js-output.html/" target="_blank" rel="noopener">JavaScript</a></p>
 ]]></content>
       <tags>
         <tag>javascript</tag>

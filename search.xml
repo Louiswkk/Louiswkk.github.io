@@ -149,7 +149,11 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import React from &#39;react&#39;;</span><br><span class="line">import ReactDom from &#39;react-dom&#39;;</span><br></pre></td></tr></table></figure>
 <p>使用ReactDom.render()去將內容post在網頁上面</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ReactDom.render(&lt;App &#x2F;&gt;, document.getElementById(&#39;root&#39;));</span><br></pre></td></tr></table></figure>
-]]></content>
+
+<h1 id="雙tag的component"><a href="#雙tag的component" class="headerlink" title="雙tag的component"></a>雙tag的component</h1><p>用function的方式創建一個component,內含div和h1兩個tag</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function App() &#123;</span><br><span class="line">  return (</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;h1&gt;Hello World!&lt;&#x2F;h1&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>下面是用const創建的element,同樣是div的tag,不過在顯示內容里再創建一個element,是h1 tag,這樣做的效果和上面function是一樣的</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const App &#x3D; () &#x3D;&gt;&#123;</span><br><span class="line">  return React.createElement(&#39;div&#39; ,&#123;&#125;, React.createElement(&#39;h1&#39; ,&#123;&#125; ,&#39;hello fucking world!&#39;));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <tags>
         <tag>React</tag>
       </tags>

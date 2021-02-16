@@ -158,4 +158,14 @@
         <tag>React</tag>
       </tags>
   </entry>
+  <entry>
+    <title>React-2</title>
+    <url>/2021/02/17/React-2/</url>
+    <content><![CDATA[<h1 id="class-component-的創建"><a href="#class-component-的創建" class="headerlink" title="class component 的創建"></a>class component 的創建</h1><p>class component 的創建其實就是基於 react 的 package,component 其實是來自 react 自帶的東西</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import React, &#123;component&#125; from &#39;react&#39;;</span><br><span class="line"></span><br><span class="line">class App extends Component&#123;</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>React</tag>
+      </tags>
+  </entry>
 </search>

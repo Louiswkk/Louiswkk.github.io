@@ -168,4 +168,14 @@
         <tag>React</tag>
       </tags>
   </entry>
+  <entry>
+    <title>React-3</title>
+    <url>/2021/02/19/React-3/</url>
+    <content><![CDATA[<h1 id="React-的-component-和-props"><a href="#React-的-component-和-props" class="headerlink" title="React 的 component 和 props"></a>React 的 component 和 props</h1><p>react 的 component 分為 function component 和 class component,這兩種 component 之前有講過怎麼 create<br>而在 react 中,會把小寫字母開頭的 tag 解析為原始的 DOM tag, 例如<div>這種就會被歸類為 HTML Tag,而如果是<br><Movie>這種大寫字母開頭的就會被歸類為 component</p>
+<p>而 props 其實就是 component 接收的參數,component 接收了 props 並且會回傳描述畫面的 react element,但最重要的一點是<br><strong>不論是 function 還是 class 來 create component,都絕對不可以修改自己的 props</strong></p>
+]]></content>
+      <tags>
+        <tag>react</tag>
+      </tags>
+  </entry>
 </search>
